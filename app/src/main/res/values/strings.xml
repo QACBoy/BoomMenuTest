@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BoomMenuTest</string>
+
+    <string name="text_inside_circle_button_text_normal">Text01</string>
+    <string name="text_inside_circle_button_text_highlighted">Text02</string>
+    <string name="text_inside_circle_button_text_unable">Text03</string>
+
+    <string name="text_outside_circle_button_text_normal">Text04</string>
+    <string name="text_outside_circle_button_text_highlighted">Text05</string>
+    <string name="text_outside_circle_button_text_unable">Text06</string>
+
+    <string name="text_ham_button_text_normal">Ham Button Text(Normal)</string>
+    <string name="text_ham_button_text_highlighted">Ham Button Text(Highlighted)</string>
+    <string name="text_ham_button_text_unable">Ham Button Text(Unable)</string>
+    <string name="text_ham_button_sub_text_normal">Ham Button Sub Text(Normal)</string>
+    <string name="text_ham_button_sub_text_highlighted">Ham Button Sub Text(Highlighted)</string>
+    <string name="text_ham_button_sub_text_unable">Ham Button Sub Text(Unable)</string>
+</resources>
