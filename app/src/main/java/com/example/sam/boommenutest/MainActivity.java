@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         leftBmb.setDuration(300);
         leftBmb.setDelay(25);
         for (int i = 0; i < leftBmb.getPiecePlaceEnum().pieceNumber(); i++)
-            leftBmb.addBuilder(BuilderManager.getTextOutsideCircleButtonBuilderWithDifferentPieceColor());
+            leftBmb.addBuilder(BuilderManager.getTextOutsideCircleButtonBuilderWithDifferentPieceColor(i));
 
 /*        leftBmb.setOnBoomListener(new OnBoomListenerAdapter() {
             @Override
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         rightBmb.setDuration(400);
         rightBmb.setDelay(35);
         for (int i = 0; i < rightBmb.getPiecePlaceEnum().pieceNumber(); i++)
-            rightBmb.addBuilder(BuilderManager.getHamButtonBuilderWithDifferentPieceColor());
+            rightBmb.addBuilder(BuilderManager.getHamButtonBuilderWithDifferentPieceColor(i));
         rightBmb.setOnBoomListener(new OnBoomListener() {
             @Override
             public void onClicked(int index, BoomButton boomButton) {

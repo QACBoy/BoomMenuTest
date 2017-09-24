@@ -80,28 +80,39 @@ public class BuilderManager {
                 .normalTextRes(R.string.text_inside_circle_button_text_normal)
                 .pieceColor(Color.WHITE);
     }
-
+/*
     static TextOutsideCircleButton.Builder getTextOutsideCircleButtonBuilder() {
         return new TextOutsideCircleButton.Builder()
                 .normalImageRes(getImageResource())
                 .normalTextRes(R.string.text_outside_circle_button_text_normal);
-    }
+    }*/
 
-    static TextOutsideCircleButton.Builder getSquareTextOutsideCircleButtonBuilder() {
+/*    static TextOutsideCircleButton.Builder getSquareTextOutsideCircleButtonBuilder() {
         return new TextOutsideCircleButton.Builder()
                 .isRound(false)
                 .shadowCornerRadius(Util.dp2px(15))
                 .buttonCornerRadius(Util.dp2px(15))
                 .normalImageRes(getImageResource())
                 .normalTextRes(R.string.text_outside_circle_button_text_normal);
-    }
+    }*/
 
-    static TextOutsideCircleButton.Builder getTextOutsideCircleButtonBuilderWithDifferentPieceColor() {
+    static TextOutsideCircleButton.Builder getTextOutsideCircleButtonBuilderWithDifferentPieceColor(int id) {
+        int [] textId={ R.string.text_outside_circle_button_text_0,
+                        R.string.text_outside_circle_button_text_1,
+                        R.string.text_outside_circle_button_text_2,
+                        R.string.text_outside_circle_button_text_3,
+                        R.string.text_outside_circle_button_text_4,
+                        R.string.text_outside_circle_button_text_5,
+                        R.string.text_outside_circle_button_text_6,
+                        R.string.text_outside_circle_button_text_7,
+                        R.string.text_outside_circle_button_text_8
+        };
         return new TextOutsideCircleButton.Builder()
                 .normalImageRes(getImageResource())
-                .normalTextRes(R.string.text_outside_circle_button_text_normal)
+                .normalTextRes(textId[id])
                 .pieceColor(Color.WHITE);
     }
+/*
 
     static HamButton.Builder getHamButtonBuilder() {
         return new HamButton.Builder()
@@ -109,6 +120,7 @@ public class BuilderManager {
                 .normalTextRes(R.string.text_ham_button_text_normal)
                 .subNormalTextRes(R.string.text_ham_button_sub_text_normal);
     }
+*/
 
     static HamButton.Builder getHamButtonBuilder(String text, String subText) {
         return new HamButton.Builder()
@@ -117,18 +129,24 @@ public class BuilderManager {
                 .subNormalText(subText);
     }
 
-    static HamButton.Builder getPieceCornerRadiusHamButtonBuilder() {
+/*    static HamButton.Builder getPieceCornerRadiusHamButtonBuilder() {
         return new HamButton.Builder()
                 .normalImageRes(getImageResource())
                 .normalTextRes(R.string.text_ham_button_text_normal)
                 .subNormalTextRes(R.string.text_ham_button_sub_text_normal);
-    }
+    }*/
 
-    static HamButton.Builder getHamButtonBuilderWithDifferentPieceColor() {
+    static HamButton.Builder getHamButtonBuilderWithDifferentPieceColor(int id) {
+        int [] textId={ R.string.text_ham_button_text_0,
+                        R.string.text_ham_button_text_1,
+                        R.string.text_ham_button_text_2,
+                        R.string.text_ham_button_text_3,
+
+        };
         return new HamButton.Builder()
                 .normalImageRes(getImageResource())
-                .normalTextRes(R.string.text_ham_button_text_normal)
-                .subNormalTextRes(R.string.text_ham_button_sub_text_normal)
+                .normalTextRes(textId[id])
+//                .subNormalTextRes(R.string.text_ham_button_sub_text_normal)
                 .pieceColor(Color.WHITE);
     }
 
