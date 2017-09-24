@@ -50,13 +50,6 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < leftBmb.getPiecePlaceEnum().pieceNumber(); i++)
             leftBmb.addBuilder(BuilderManager.getTextOutsideCircleButtonBuilderWithDifferentPieceColor(i));
 
-/*        leftBmb.setOnBoomListener(new OnBoomListenerAdapter() {
-            @Override
-            public void onBoomWillShow() {
-                super.onBoomWillShow();
-                // logic here
-            }
-        });*/
         leftBmb.setOnBoomListener(new OnBoomListener() {
             @Override
             public void onClicked(int index, BoomButton boomButton) {
@@ -69,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         Toast.makeText(MainActivity.this,"1ooooo",Toast.LENGTH_SHORT).show();
+
                         break;
                     case 2:
                         Toast.makeText(MainActivity.this,"2ooooo",Toast.LENGTH_SHORT).show();
@@ -93,6 +87,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     default:
                 }
+
+
+
             }
 
             @Override
@@ -188,5 +185,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
     }
+
 }

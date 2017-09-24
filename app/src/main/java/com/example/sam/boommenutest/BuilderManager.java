@@ -58,13 +58,13 @@ public class BuilderManager {
                 .buttonCornerRadius(Util.dp2px(20))
                 .normalImageRes(getImageResource());
     }
-
+/*
     static TextInsideCircleButton.Builder getTextInsideCircleButtonBuilder() {
         return new TextInsideCircleButton.Builder()
                 .normalImageRes(getImageResource())
                 .normalTextRes(R.string.text_inside_circle_button_text_normal);
-    }
-
+    }*/
+/*
     static TextInsideCircleButton.Builder getSquareTextInsideCircleButtonBuilder() {
         return new TextInsideCircleButton.Builder()
                 .isRound(false)
@@ -72,14 +72,14 @@ public class BuilderManager {
                 .buttonCornerRadius(Util.dp2px(10))
                 .normalImageRes(getImageResource())
                 .normalTextRes(R.string.text_inside_circle_button_text_normal);
-    }
+    }*/
 
-    static TextInsideCircleButton.Builder getTextInsideCircleButtonBuilderWithDifferentPieceColor() {
+/*    static TextInsideCircleButton.Builder getTextInsideCircleButtonBuilderWithDifferentPieceColor() {
         return new TextInsideCircleButton.Builder()
                 .normalImageRes(getImageResource())
                 .normalTextRes(R.string.text_inside_circle_button_text_normal)
                 .pieceColor(Color.WHITE);
-    }
+    }*/
 /*
     static TextOutsideCircleButton.Builder getTextOutsideCircleButtonBuilder() {
         return new TextOutsideCircleButton.Builder()
